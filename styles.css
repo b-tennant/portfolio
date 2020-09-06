@@ -1,0 +1,62 @@
+header{
+background-color: olive;
+padding: 20px;
+text-align: center;
+position: fixed;
+width: 100%;
+z-index: 1;
+top: 0;
+left: 0;
+}
+header h1{
+    color: white;
+    border: 5px solid white;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 36px;
+    border-width: 10px;
+}
+.banner{
+   position: relative;
+   top: 150px;
+}
+.banner img{
+    max-width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    height: 300px;
+}
+.banner .welcome{
+    background-color: olive;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    padding: 10px;
+}
+.banner h2{ 
+    font-size: 20px;
+}
+.banner h2 span{
+    font-size: 1.3em;
+}
+nav{
+    background-color: olive;
+    padding: 20px;
+    position: sticky;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+nav li a{
+    text-decoration: none;
+    color: silver;
+}
