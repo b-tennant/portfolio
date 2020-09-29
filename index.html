@@ -1,57 +1,156 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <title>Benjamin Tennant</title>
-</head>
-<body>
-    <header>
-        <h1>Benjamin Tennant</h1>
-    </header>
-    <section class="banner" id="home">
-        <img src="img/BioPic2.jpeg" alte="Picture of me">
-        <div class="welcome">
-            <h2>Welcome to <br><span>my website!</span></h2>
-        </div>
-    </section>
-    <nav class="main-nav">
-        <ul>
-            <li><a href="#home" class="home">Back to home</a></li>
-            <li><a href="#about">Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" href="styles.css">
+    
+    <title>Ben's Portfolio</title>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <nav>
+      <img src="img/bio-pic.jpeg" alt="picture of me">
+      <div class="toggle-button" id="Btn"><i class="fas fa-hamburger"></i></div>
+        <ul class="nav-items" id="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#portfolio">Project Portfolio</a></li>
+            <li><a href="#experience">Industry Experience</a></li>
+            <li><a href="#contact">Contact me</a></li>
         </ul>
     </nav>
     <main>
-        <article class="about-section" id="about">
-            <h2>A little bit about me</h2>
-            <p>This paragraph will go on to contain infomation about me, such as my degree background
-                my work experience thus far and what my hobbies are outside of my career.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus vel diam non ornare.
-                Pellentesque dui ligula, aliquam eget ligula venenatis,
-                varius fermentum neque. In pellentesque cursus justo id venenatis.
-                Fusce in ex et leo facilisis consequat.
-                Aliquam aliquet lectus nec diam efficitur,
-                vel condimentum urna hendrerit.
-                Nam sed cursus tellus. Proin suscipit viverra lacus, in finibus magna finibus tristique.
-                Nam sollicitudin feugiat nisl, eget condimentum magna ornare eget.
-                Cras ut tristique nisi. In maximus nibh eget tortor rutrum,
-                finibus ornare tellus consectetur. In placerat turpis quis diam condimentum, nec mollis mi faucibus.
-                Sed arcu nunc, lacinia a magna feugiat, convallis imperdiet arcu. Cras mollis malesuada feugiat.
-                Nunc sodales lacus quis mi vehicula bibendum. Etiam accumsan sapien ut enim imperdiet tempor.
-                Aenean varius velit sit amet ipsum iaculis, lobortis laoreet erat faucibus.
-            </p>
-        </article>
-        <article class="sections" id="portfolio">
-            <h2>Projects</h2>
-        </article>
-        <article class="sections" id="experience">
-            <h2>Experience</h2>
-        </article>
-        <article class="sections" id="contact">
-            <h2>Contact</h2>
-        </article>
+      <p id="home"></p>
+      <image src="img/nology-background.jpg" class="image-2"></image>
+      <image src="img/nology-background.jpg" class="image-3"></image>
+      
+      <section class="home-section">
+          <h1>Hi, I'm Benjamin Tennant</h1>
+          <h2>Junior Developer</h2>
+        </section>
+      
+        <section id="about">
+        <h2 class="about">About me</h2>
+      
+        <p>
+          My name's Benjamin Tennant and I'm from Staffordshire, not too far from
+          Birmingham, UK. After excelling in Economics at A level, I decided to
+          continue reading the subject at University. Before going to University, 
+          I took a medical gap year. During this time out I under-went two rounds of 
+          complex knee surgery following a nasty rugby injury, as well as a brief period
+          of travel. I worked part-time at Waitrose throughout the entirity of my degree
+          and went on to gain <span class="black-text">upper second class honours.</span> Outside of term time I completed
+          two finance internships, one of which was at Barclays within their Corporate Bank.
+        </p>
+          <p>
+          Continual development of my commercial awareness led me to recognise the growing
+          dependancy upon tech to drive growth and efficiency within businesses. 
+          With this in mind, as well as the COVID-19 job market, I decided
+          to enroll on an intensive <span class="black-text">Software Development training programme with _nology.</span>
+          This allows me to upskill, by gaining future-proof programming skills, working 
+          with HTML, CSS, JavaScript, Node.js and React.js. While on the course I will 
+          also be involved in a client project.
+        </p>
+  
+      </section>
+      
+        <h2 id="portfolio">Project Portfolio</h2>
+      <section class="projects">
+        
+        <!-- <article class="project">1 -->
+          <div class="card" style="width: 15rem;">
+            <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Some quick example text.</p>
+              <a href="#" class="btn btn-primary">Launch</a>
+            </div>
+          </div>
+        <!-- </article> -->
+        
+        <!-- <article class="project">2 -->
+          <div class="card" style="width: 15rem;">
+            <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Some quick example text.</p>
+              <a href="#" class="btn btn-primary">Launch</a>
+            </div>
+          </div>
+
+        <!-- </article> -->
+        
+        <!-- <article class="project">3 -->
+          <div class="card" style="width: 15rem;">
+            <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Some quick example text.</p>
+              <a href="#" class="btn btn-primary">Launch</a>
+            </div>
+          </div>
+
+        <!-- </article> -->
+       
+        <!-- <article class="project">4 -->
+          <div class="card" style="width: 15rem;">
+            <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 4</h5>
+              <p class="card-text">Some quick example text.</p>
+              <a href="#" class="btn btn-primary">Launch</a>
+            </div>
+          </div>
+
+        <!-- </article> -->
+        
+        <!-- <article class="project">5 -->
+          <div class="card" style="width: 15rem;">
+            <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 5</h5>
+              <p class="card-text">Some quick example text.</p>
+              <a href="#" class="btn btn-primary">Launch</a>
+            </div>
+          </div>
+
+        <!-- </article> -->
+        <!-- <article class="project">6 -->
+          <div class="card" style="width: 15rem;">
+            <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 6</h5>
+              <p class="card-text">Some quick example text.</p>
+              <a href="#" class="btn btn-primary">Launch</a>
+            </div>
+          </div>
+
+        <!-- </article> -->
+      </section>
+     
+      <section id="experience">
+        <h2>Industry Experience<h2>
+      </section>
+
+      
+      <section id="contact">
+        
+        <h2>Contact</h2>
+          
+        <div class="form-container">
+          <h3>Get in touch!</h3>
+     
+          
+        </div>
+        
+      </section>
+    
     </main>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
