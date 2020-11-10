@@ -6,7 +6,7 @@
 }
 
 nav {
-  background-color: #27a6d8;
+  background-color: #4B2B7D;
   width: 15%;
   height: 100vh;
   position: fixed;
@@ -24,7 +24,7 @@ nav ul {
   height: 100%;
 }
 nav ul li {
-  color: #5c5c5c;
+  color: #4B2B7D;
   font-weight: 900;
 }
 nav ul li:hover a {
@@ -59,12 +59,12 @@ main {
 }
 
 .image-3 {
-  width: 90vw;
-  height: 50vh;
+  width: 400px;
+  height: 600px;
   position: fixed;
   z-index: -2;
-  transform: scaleY(-1);
-  bottom: 0;
+  bottom: -50px;
+  right: 10px;
 }
 
 section {
@@ -80,7 +80,7 @@ nav li {
 
 nav ul li a {
   text-decoration: none;
-  color: #5c5c5c;
+  color: white;
   font-weight: 900;
 }
 
@@ -89,10 +89,10 @@ html {
 }
 
 p {
-  width: 700px;
   margin-left: 25px;
   font-family: Arial, Helvetica, sans-serif;
   color: grey;
+  width: 55vw;
 }
 
 .black-text {
@@ -131,18 +131,18 @@ p {
 h1 {
   font-family: "Bebas Neue", cursive;
   font-size: 80px;
-  color: #5c5c5c;
+  color: #4B2B7D;
   margin-top: 350px;
   margin-left: 20px;
 }
 
 h2 {
-  color: #5c5c5c;
+  color: #4B2B7D;
   margin-left: 25px;
 }
 
 h3 {
-  color: #5c5c5c;
+  color: #4B2B7D;
   margin-left: 25px;
 }
 
