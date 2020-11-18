@@ -69,6 +69,7 @@ main {
 
 section {
   height: 100vh;
+  margin: 40px;
 }
 
 nav li {
@@ -105,13 +106,9 @@ p {
   width: 90%;
   height: 100vh;
   background-color: transparent;
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px auto;
   justify-items: center;
   gap: 5px 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .project {
@@ -153,42 +150,74 @@ h3 {
   margin: 30px;
 }
 
+.proj-cards {
+  width: 90%;
+  height: 100vh;
+  background-color: transparent;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 0;
+}
+
 /* Media Queries */
 /* Mobiles */
 @media screen and (max-width: 600px) {
-  nav {
-    background-color: white;
-    width: 100%;
-    position: static;
-    height: 15vh;
-  }
-  nav img {
-    display: none;
-  }
-  nav #nav-list {
-    display: none;
-    height: 100%;
-    color: black;
-    list-style: none;
-  }
-  nav #nav-list li {
-    margin: 0;
-    padding: 0;
-    margin-top: 50px;
-  }
-  nav #nav-list li a {
-    color: black;
-  }
-  nav .toggle-button {
-    display: block;
-  }
-
-  #nav-list.active {
-    display: flex !important;
-  }
-
   main {
     width: 100%;
     left: 0;
+  }
+
+  .image-3 {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: white;
+  }
+
+  h2 {
+    font-size: 25px;
+    color: white;
+  }
+
+  h3 {
+    font-size: 20px;
+    color: white;
+  }
+
+  p {
+    font-size: 10px;
+    color: white;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+
+  .UoL-img {
+    display: none;
+  }
+
+  .nology-pic {
+    display: none;
+  }
+
+  main {
+    background-color: #4B2B7D;
+  }
+
+  #portfolio {
+    margin-left: 0;
+  }
+
+  #contact-h2 {
+    margin: 20px;
   }
 }
