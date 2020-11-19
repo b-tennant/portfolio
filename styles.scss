@@ -8,13 +8,14 @@
   nav {
 
     background-color: #4B2B7D;
-    width: 15%;
-    height: 100vh;
+    width: 175px;
+    height: 100%;
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // margin-right: 10px;
 
     img {
       height: 150px;
@@ -63,7 +64,7 @@
     width: 85%;
     min-height: 100vh;
     position: absolute;
-    left: 15%;
+    left: 175px;
 
   }
   .image-2 {
@@ -82,7 +83,7 @@
     right: 10px;
   }
   section {
-    height: 100vh;
+    min-height: 100vh;
     margin: 40px;
   }
       
@@ -124,7 +125,7 @@
 
   .projects {
     width: 90%;
-    height: 100vh;
+    // height: 100vh;
     background-color: transparent;
     margin: 50px auto;
   //   display: grid;
@@ -145,6 +146,10 @@
   }
   .card {
     transition: transform 0.2s
+  }
+
+  .home-section {
+    height: 100vw;
   }
 
 
@@ -178,15 +183,16 @@
 
   .proj-cards {
     width: 90%;
-    height: 100vh;
+    // height: 100vh;
     background-color: transparent;
     margin-left: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    // grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     // justify-items: center;
-    gap: 5px 0;
-    
+    gap: 5px;
   }
+
 
 
 
@@ -198,7 +204,7 @@
   
   
   main {
-    width: 100%;
+    width: 100vw;
     left: 0;
   }
   
@@ -234,7 +240,7 @@
   }
 
   .projects {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     height: 100%;
     
     
@@ -259,7 +265,18 @@
     margin: 20px;
   }
 
+  @media screen and (max-width: 400px) {
 
+    .projects {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+
+
+
+
+
+  }
 
   // section {
   //   height: 100vh;

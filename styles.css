@@ -7,8 +7,8 @@
 
 nav {
   background-color: #4B2B7D;
-  width: 15%;
-  height: 100vh;
+  width: 175px;
+  height: 100%;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ main {
   width: 85%;
   min-height: 100vh;
   position: absolute;
-  left: 15%;
+  left: 175px;
 }
 
 .image-2 {
@@ -68,7 +68,7 @@ main {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   margin: 40px;
 }
 
@@ -104,7 +104,6 @@ p {
 
 .projects {
   width: 90%;
-  height: 100vh;
   background-color: transparent;
   margin: 50px auto;
   justify-items: center;
@@ -123,6 +122,10 @@ p {
 
 .card {
   transition: transform 0.2s;
+}
+
+.home-section {
+  height: 100vw;
 }
 
 h1 {
@@ -152,19 +155,18 @@ h3 {
 
 .proj-cards {
   width: 90%;
-  height: 100vh;
   background-color: transparent;
   margin-left: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px 0;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 5px;
 }
 
 /* Media Queries */
 /* Mobiles */
 @media screen and (max-width: 600px) {
   main {
-    width: 100%;
+    width: 100vw;
     left: 0;
   }
 
@@ -197,7 +199,7 @@ h3 {
   }
 
   .projects {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     height: 100%;
   }
 
@@ -219,5 +221,10 @@ h3 {
 
   #contact-h2 {
     margin: 20px;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 400px) {
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 }
